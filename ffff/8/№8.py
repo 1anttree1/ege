@@ -7,7 +7,7 @@ for i in n:
 h = 0
 for i in a:
     j = ''.join(i)
-    if i.count("3") == 2 and i[0] != '0' and (j[0]+j[1] not in w) and (j[1]+j[2] not in w) and (j[2]+j[3] not in w) and (j[3]+j[4] not in w):
+    if i.count("2") == 2 and i[0] != '0' and (j[0]+j[1] not in w) and (j[1]+j[2] not in w) and (j[2]+j[3] not in w) and (j[3]+j[4] not in w):
         h += 1
         print(i)
 print(h)
