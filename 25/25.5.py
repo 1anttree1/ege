@@ -9,9 +9,10 @@ for i in range(460000001, 4600000000):
             dl += 2
         if dl > 5:
             break
-    for j in range(i//2 + 1, 1, -1):
-        if i%j == 0:
-            mx += 1
-            if mx == 5:
-                print(j, i)
-                break
+    if dl > 5:
+        for j in range(i//2 + 1, 1, -1):
+            if i%j == 0:
+                mx += 1
+                if mx == 5:
+                    print(j, i)
+                    break
