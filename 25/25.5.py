@@ -9,7 +9,7 @@ for i in range(460000001, 4600000000):
             dl += 2
         if dl > 5:
             break
-    if dl > 5:
+    if dl > 5:ц
         for j in range(i//2 + 1, 1, -1):
             if i%j == 0:
                 mx += 1
