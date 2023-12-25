@@ -1,4 +1,3 @@
-#27851
 for i in range(210235,210300):
     s=0
     for d in range(2,int(i**0.5)):
