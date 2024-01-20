@@ -13,7 +13,7 @@ for i in range(len(s)):
         des = int(s[i][1]) + int(s[j][1])
         ed = int(s[i][2]) + int(s[j][2])
         controlsum = str(ed)+str(sot)+str(des)
-        print(s[i], s[j], controlsum, controlsum[1:4])
-        # if controlsum[1:4] == '002' or controlsum == '002':
-        #     print(s[i], s[i+1])
+        # print(s[i], s[j], controlsum, controlsum[1:4])
+        if controlsum[-4:-1] == '002':
+            print(s[i], s[i+1])
         # print(str(s[i]) , str(s[j]))
