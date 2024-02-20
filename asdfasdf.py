@@ -20,20 +20,20 @@
 #                 break
 
 
-# from itertools import *
-# a = product('гипербола', repeat = 6)
+from itertools import *
+a = product('гипербола', repeat = 6)
 # s = [''.join(i) for i in a]
 # gl = "иеоа"
-# sgl = "гпрбл"
-# h = 0
-# for i in s:
-#     if i[0] in sgl and i[-1] in sgl:
-#         for j in range(1, len(i)-1):
-#             if i[j] in gl and i[j-1] in sgl and i[j+1] in sgl:
-#                 break
-#         else:
-#             h += 1
-# print(h)
+sgl = "гпрбл"
+h = 0
+for i in s:
+    if i[0] in sgl and i[-1] in sgl:
+        for j in range(1, len(i)-1):
+            if i[j] in gl and i[j-1] in sgl and i[j+1] in sgl:
+                break
+        else:
+            h += 1
+print(h)
 
 # for i in range(1234567891011122, 9999999999999999+1):
 #     r = str(i)[::-1]
@@ -72,3 +72,12 @@
 #             h += 1
 #     mx = max(mx, h)
 
+from itertools import *
+# s = [''.join(i) for i in permutations('хочунабюджет', r = 12)]
+# print(s)
+a = permutations('хочунабюджет', r = 12)
+s = []
+for i in a:
+    s.append(''.join(i))
+    print()
+print(s)
