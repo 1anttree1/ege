@@ -1,7 +1,7 @@
 mn = 78902130987129078
 h = 1
 s= []
-file = open('27v01_B.txt')
+file = open('27v01_A.txt')
 l = [int(i) for i in file]
 l1 = [int(i) for i in l]
 l.sort()
