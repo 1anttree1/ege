@@ -1,1 +1,9 @@
-f = [[0, 11], [0, 13], [0, 14], [1, 1], [1, 23], [1, 232], [2, 13], [2, 1313], [2, 2322]]
+from functools import *
+@lru_cache()
+def f(n):
+    if n >= 2024:
+        return 1
+    if n < 2024:
+        return f(n+2) + f(n+4)
+
+print(f(1300))
