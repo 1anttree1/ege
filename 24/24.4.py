@@ -4,8 +4,6 @@ k = 0
 mx = -1
 print(len(file24))
 for i in range(len(file24)):
-    if i%100000==0:
-        print(i)
     if file24[i] == 'Y':
         h = 1
         k = 1
